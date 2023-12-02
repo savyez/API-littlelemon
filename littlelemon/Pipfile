@@ -11,6 +11,8 @@ djoser = "*"
 mysqlclient = "*"
 requests = "*"
 django-environ = "*"
+psycopg = "*"
+psycopg2 = "*"
 
 [dev-packages]
 

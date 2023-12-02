@@ -10,7 +10,7 @@ SECRET_KEY = 'django-insecure-3sf!li_q0t-%$v^q2l=m9!&s68sm_(n^a99l+#ik%4ax)+e60)
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['testserver', '*']
+ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -62,15 +62,12 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'littlelemon',
         'HOST': 'localhost',
-        'PORT': '3306',
-        'USER': 'admin',
-        'PASSWORD': '',
-        'OPTIONS': {
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
-        },
+        'PORT': '5432',
+        'USER': 'postgres',
+        'PASSWORD': '741222',
     },
 }
 
